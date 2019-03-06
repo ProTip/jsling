@@ -11,4 +11,9 @@ const stdin = FS.readFileSync(0, 'utf8')
 
 const $ = JSON.parse(stdin)
 
-console.log(Util.inspect(eval(process.argv[2]), false, 50, true))
+const res = eval(process.argv[2])
+
+if (process.stdout.isTTY)
+    console.log(Util.inspect(res, false, 50, true))
+else
+    process.stdout.write(JSON.stringify(res))

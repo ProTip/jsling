@@ -1,13 +1,21 @@
 {
   "name": "jsling",
   "version": "0.0.1",
-  "description": "",
+  "description": "Sling JSON with JavaScript",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Greg Zapp (ProTip)",
+  "keywords": [
+    "json",
+    "jq"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protip/jsling.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^11.10.4",
     "typescript": "^3.3.3333"
